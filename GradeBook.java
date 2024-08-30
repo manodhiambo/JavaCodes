@@ -4,9 +4,9 @@ public class GradeBook
 {
 
 	// display a welcom message to the gradebook user
-	public void displayMessage()
+	public void displayMessage(String courseName )
 	{
 	
-		System.out.println("Welcome to the Grade Book");
+		System.out.printf("Welcome to the Grade Book for \n %s!\n", courseName);
 	}
 }
