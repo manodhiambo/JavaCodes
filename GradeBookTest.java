@@ -10,10 +10,15 @@ public class GradeBookTest
 	
 		GradeBook myGradeBook = new GradeBook();
 
+		//display initial value of courseName
+		System.out.printf( "Initial value name is: %s \n\n", myGradeBook.getCourseName());
+
+		//prompt for and read course name
 		System.out.println("Please enter the course name");
-		String nameOfCourse = input.nextLine();
+		String theName = input.nextLine();
+		myGradeBook.setCourseName( theName);
 		System.out.println();
 
-		myGradeBook.displayMessage(nameOfCourse );
+		myGradeBook.displayMessage();
 	}
 }
