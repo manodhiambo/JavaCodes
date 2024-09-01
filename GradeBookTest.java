@@ -1,24 +1,20 @@
 // Creating a gradeBook object and calling its displayMessage method
 
-import java.util.Scanner;
 public class GradeBookTest
 {
 
 	public static void main( String[] args)
 	{
-		Scanner input = new Scanner(System.in);
+		// create GradeBook object
+		GradeBook gradeBook1 = new GradeBook(
+				"BIT Introduction to Java Programming");
+		GradeBook gradeBook2 = new GradeBook(
+				"BIT Data structures in Java");
 	
-		GradeBook myGradeBook = new GradeBook();
 
 		//display initial value of courseName
-		System.out.printf( "Initial value name is: %s \n\n", myGradeBook.getCourseName());
+		System.out.printf( "gradeBook1 course name is: %s \n\n", gradeBook1.getCourseName());
 
-		//prompt for and read course name
-		System.out.println("Please enter the course name");
-		String theName = input.nextLine();
-		myGradeBook.setCourseName( theName);
-		System.out.println();
-
-		myGradeBook.displayMessage();
+		System.out.printf("gradeBook2 courseName is:  %s\n", gradeBook2.getCourseName());
 	}
 }

@@ -4,6 +4,13 @@ public class GradeBook
 {
 	private String courseName;
 
+	//constructor initializes courseName with String argument
+	public GradeBook( String name)
+	{
+	
+		courseName = name;
+	} // end constructor
+
 	//method to set the course name
 	public void setCourseName( String name)
 	{
